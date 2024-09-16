@@ -22,17 +22,16 @@
    */
 
   /* gradient */
-
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    hsl(0, 0%, 95%) 3%, 
+    hsl(0, 0%, 90%) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    hsla(45, 25%, 90%, 0.251) 0%, 
+    hsla(40, 12%, 95%, 0) 100%
+  ), hsl(40, 12%, 95%);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
     hsl(45, 100%, 71%) 0%, 
@@ -42,33 +41,27 @@
     135deg, 
     hsla(45, 100%, 71%, 0.251) 0%, 
     hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+  ), hsl(40, 12%, 95%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
-  );
-  --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(0, 0%, 78%) 0%, 
+    hsla(0, 0%, 78%, 0) 50%
   );
 
   /* solid */
-
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
+  --onyx: hsl(40, 12%, 92%);
+  --eerie-black-1: hsl(40, 12%, 95%);
+  --eerie-black-2: hsl(40, 12%, 94%);
+  --smoky-black: hsl(0, 0%, 96%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
-
+  --accent-color: hsl(0, 0%, 50%);
+  --light-gray: hsl(0, 0%, 10%);
+  --light-gray-70: hsla(0, 0%, 10%, 0.8);
+  --light-gray-40: hsla(0, 0%, 10%, 0.4);
+  --border-color: hsl(0, 0%, 30%);
+  --golden-yellow: hsl(50, 100%, 50%);
+  --golden-dark: hsl(50, 100%, 35%);
   /**
    * typography
    */
@@ -92,15 +85,12 @@
   --fw-500: 500;
   --fw-600: 600;
 
-  /**
-   * shadow
-   */
-  
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+  /* shadow */
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.115);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.125);
 
   /**
    * transition
@@ -147,7 +137,7 @@ input, textarea {
 }
 
 ::selection {
-  background: var(--orange-yellow-crayola);
+  background: var(--light-gray-40);
   color: var(--smoky-black);
 }
 
@@ -168,7 +158,7 @@ body { background: var(--smoky-black); }
 .sidebar,
 article {
   background: var(--eerie-black-2);
-  border: 1px solid var(--jet);
+  border: 1px solid var(--border-color);
   border-radius: 20px;
   padding: 15px;
   box-shadow: var(--shadow-1);
@@ -178,7 +168,7 @@ article {
 .separator {
   width: 100%;
   height: 1px;
-  background: var(--jet);
+  background: var(--border-color);
   margin: 16px 0;
 }
 
@@ -224,7 +214,7 @@ article.active {
 .h3,
 .h4,
 .h5 {
-  color: var(--white-2);
+  color: var(--jet);
   text-transform: capitalize;
 }
 
@@ -334,7 +324,7 @@ main {
 }
 
 .info-content .name {
-  color: var(--white-2);
+  color: var(--jet);
   font-size: var(--fs-3);
   font-weight: var(--fw-500);
   letter-spacing: -0.25px;
@@ -342,13 +332,14 @@ main {
 }
 
 .info-content .title {
-  color: var(--white-1);
+  color: var(--jet);
   background: var(--onyx);
   font-size: var(--fs-8);
-  font-weight: var(--fw-300);
+  font-weight: var(--fw-400);
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
+
 }
 
 .info_more-btn {
@@ -420,7 +411,7 @@ main {
 }
 
 .contact-info :is(.contact-link, time, address) {
-  color: var(--white-2);
+  color: var(--jet);
   font-size: var(--fs-7);
 }
 
@@ -453,9 +444,9 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsla(0, 0%, 100%, 0.75);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--jet);
+  border: 1px solid var(--border-color);
   border-radius: 12px 12px 0 0;
   box-shadow: var(--shadow-2);
   z-index: 5;
@@ -470,16 +461,16 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  color: var(--jet);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { color: var(--light-gray); }
 
-.navbar-link.active { color: var(--orange-yellow-crayola); }
+.navbar-link.active { color: var(--accent-color); }
 
 
 
@@ -538,7 +529,7 @@ main {
 }
 
 .timeline-list span {
-  color: var(--vegas-gold);
+  color: var(--light-gray);
   font-weight: var(--fw-400);
   line-height: 1.6;
 }
@@ -550,7 +541,7 @@ main {
   left: -30px;
   width: 1px;
   height: calc(100% + 50px);
-  background: var(--jet);
+  background: var(--light-gray-70);
 }
 
 .timeline-item::after {
@@ -560,13 +551,13 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--golden-yellow);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--jet);
+  box-shadow: 0 0 0 4px var(--light-gray);
 }
 
 .timeline-text {
-  color: var(--light-gray);
+  color: var(--text-gradient-yellow);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
@@ -599,7 +590,7 @@ main {
 
 .paper-publication {
   font-size: var(--fs-9);
-  color: var(--orange-yellow-crayola);
+  color: var(--golden-dark);
   margin: 5px 0;
 }
 
@@ -611,7 +602,7 @@ main {
   }
   
 .paper-link {
-  color: var(--light-gray);
+  color: var(--light-gray-70);
   font-weight: bold;
   text-decoration: none;
   font-size: var(--fs-10);

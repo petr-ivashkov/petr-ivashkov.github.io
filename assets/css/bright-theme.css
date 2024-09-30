@@ -471,10 +471,6 @@ main {
 
 .navbar-link.active { color: var(--accent-color); }
 
-
-
-
-
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
@@ -611,6 +607,23 @@ main {
   text-decoration: underline;
 }  
  
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: -30px; /* This positions it right below the main frame */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--fs-8);
+  flex-wrap: wrap;
+  display: flex;
+}
+
 
 /*-----------------------------------*\
   #RESPONSIVE

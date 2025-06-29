@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petr Ivashkov</title>
+
+  <style>
+    .bold {
+        font-weight: bold;
+    }
+</style>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/bright-theme.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z40GQPZNKL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Z40GQPZNKL');
+  </script>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-photo.png" alt="Petr Ivashkov" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Petr Ivashkov">Petr Ivashkov</h1>
+
+          <p class="title">MSc Student at ETH Zurich</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Zurich, Switzerland</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          
+          <li class="social-item">
+            <a href="mailto:ivashkov.peter@gmail.com" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+      
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=8oaDN2IAAAAJ&hl=en" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" width="1em" height="1em">
+                <path fill="currentColor" d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+              </svg>
+            </a>
+          </li>
+          
+          
+          <li class="social-item">
+            <a href="https://github.com/petr-ivashkov" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/ivashkov-petr/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/PeterIvashkov" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <a href="assets/files/resume.pdf" class="navbar-link" target="_blank">Resume</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a final-year MSc student at ETH Zurich.
+          </p>
+          <p>
+            I am broadly interested in <strong>quantum computing</strong>, <strong>quantum many-body physics</strong>, and <strong>machine learning</strong>.
+          </p>
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">ETH Zurich</h4>
+
+              <span>2023 — 2025</span>
+
+              <p class="timeline-text">
+                MSc Quantum Engineering
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technical University of Munich </h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+                BSc Physics
+              </p>
+
+            </li>
+
+          </ol>
+
+          <section class="papers">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="document-text-outline"></ion-icon>
+              </div>
+          
+              <h3 class="h3">Papers</h3>
+            </div>
+
+            <ul class="papers-list">
+              <li class="paper-item">
+                <p class="paper-authors">
+                  [*] co-first authorship
+                </p>
+              </li>
+              <li class="paper-item">
+          
+                <p class="paper-title">From quantum enhanced to quantum inspired Monte Carlo</p>
+          
+                <p class="paper-authors">
+                  Johannes Christmann*, <strong>Petr Ivashkov*,</strong> Mattia Chiurco, Guglielmo Mazzola
+                </p>
+          
+                <p class="paper-publication">
+                  Phys. Rev. A <strong>111</strong>, 042615 (2025)
+                </p>
+          
+                <div class="paper-links">
+                  <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.111.042615" class="paper-link">[link]</a>
+                </div>
+          
+              </li>
+
+              <li class="paper-item">
+          
+                <p class="paper-title">QKAN: Quantum Kolmogorov-Arnold Networks</p>
+          
+                <p class="paper-authors">
+                  <strong>Petr Ivashkov,</strong> Po-Wei Huang, Kelvin Koor, Lirandë Pira, Patrick Rebentrost
+                </p>
+          
+                <p class="paper-publication">
+                  arXiv (2024)
+                </p>
+          
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2410.04435" class="paper-link">[link]</a>
+                  <a href="assets/files/slides/qkan_qpc_talk.pdf" class="paper-link">[slides]</a>
+                  <a href="assets/files/posters/qkan_qctip_poster.pdf" class="paper-link">[poster]</a>
+                </div>
+          
+              </li>
+      
+              <li class="paper-item">
+          
+                <p class="paper-title">High-Fidelity, Multiqubit Generalized Measurements with Dynamic Circuits</p>
+          
+                <p class="paper-authors">
+                  <strong>Petr Ivashkov,</strong> Gideon Uchehara, Liang Jiang, Derek S. Wang, Alireza Seif
+                </p>
+          
+                <p class="paper-publication">
+                  PRX Quantum <strong>5</strong>, 030315 (2024)
+                </p>
+          
+                <div class="paper-links">
+                  <a href="https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.5.030315" class="paper-link">[link]</a>
+                  <a href="assets/videos/povms_with_dynamic_circuits.mp4" class="paper-link">[video]</a>
+                  <a href="assets/files/posters/povms_tqc_poster.pdf" class="paper-link">[poster]</a>
+                </div>
+          
+              </li>      
+          
+              <!-- You can add more papers by repeating the <li class="paper-item"> structure -->
+          
+            </ul>
+          
+          </section>
+
+  <div class="footer">
+    Last updated on Apr 2025 | Website template by&nbsp;<a href="https://github.com/codewithsadee/vcard-personal-portfolio" class="footer-link"> [codewithsadee]</a>.
+  </div>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>
